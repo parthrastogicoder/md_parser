@@ -1,0 +1,32 @@
+lib: [
+  "_build/install/default/lib/markdown_parser/META"
+  "_build/install/default/lib/markdown_parser/dune-package"
+  "_build/install/default/lib/markdown_parser/io.ml"
+  "_build/install/default/lib/markdown_parser/markdown_parser.a"
+  "_build/install/default/lib/markdown_parser/markdown_parser.cma"
+  "_build/install/default/lib/markdown_parser/markdown_parser.cmi"
+  "_build/install/default/lib/markdown_parser/markdown_parser.cmt"
+  "_build/install/default/lib/markdown_parser/markdown_parser.cmx"
+  "_build/install/default/lib/markdown_parser/markdown_parser.cmxa"
+  "_build/install/default/lib/markdown_parser/markdown_parser.ml"
+  "_build/install/default/lib/markdown_parser/markdown_parser__Io.cmi"
+  "_build/install/default/lib/markdown_parser/markdown_parser__Io.cmt"
+  "_build/install/default/lib/markdown_parser/markdown_parser__Io.cmx"
+  "_build/install/default/lib/markdown_parser/markdown_parser__Parser.cmi"
+  "_build/install/default/lib/markdown_parser/markdown_parser__Parser.cmt"
+  "_build/install/default/lib/markdown_parser/markdown_parser__Parser.cmx"
+  "_build/install/default/lib/markdown_parser/markdown_parser__Styles.cmi"
+  "_build/install/default/lib/markdown_parser/markdown_parser__Styles.cmt"
+  "_build/install/default/lib/markdown_parser/markdown_parser__Styles.cmx"
+  "_build/install/default/lib/markdown_parser/parser.ml"
+  "_build/install/default/lib/markdown_parser/styles.ml"
+]
+libexec: [
+  "_build/install/default/lib/markdown_parser/markdown_parser.cmxs"
+]
+bin: [
+  "_build/install/default/bin/markdown_parser"
+]
+doc: [
+  "_build/install/default/doc/markdown_parser/README.md"
+]

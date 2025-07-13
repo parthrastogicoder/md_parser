@@ -1,0 +1,4 @@
+(library
+ (public_name markdown_parser)
+ (name markdown_parser)
+ (libraries str))

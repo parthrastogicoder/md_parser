@@ -1,0 +1,6 @@
+description = ""
+requires = "str"
+archive(byte) = "markdown_parser.cma"
+archive(native) = "markdown_parser.cmxa"
+plugin(byte) = "markdown_parser.cma"
+plugin(native) = "markdown_parser.cmxs"

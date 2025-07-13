@@ -1,0 +1,61 @@
+(lang dune 3.19)
+(name markdown_parser)
+(sections (lib .) (libexec .) (bin ../../bin) (doc ../../doc/markdown_parser))
+(files
+ (lib
+  (META
+   dune-package
+   io.ml
+   markdown_parser.a
+   markdown_parser.cma
+   markdown_parser.cmi
+   markdown_parser.cmt
+   markdown_parser.cmx
+   markdown_parser.cmxa
+   markdown_parser.ml
+   markdown_parser__Io.cmi
+   markdown_parser__Io.cmt
+   markdown_parser__Io.cmx
+   markdown_parser__Parser.cmi
+   markdown_parser__Parser.cmt
+   markdown_parser__Parser.cmx
+   markdown_parser__Styles.cmi
+   markdown_parser__Styles.cmt
+   markdown_parser__Styles.cmx
+   parser.ml
+   styles.ml))
+ (libexec (markdown_parser.cmxs))
+ (bin (markdown_parser))
+ (doc (README.md)))
+(library
+ (name markdown_parser)
+ (kind normal)
+ (archives (byte markdown_parser.cma) (native markdown_parser.cmxa))
+ (plugins (byte markdown_parser.cma) (native markdown_parser.cmxs))
+ (native_archives markdown_parser.a)
+ (requires str)
+ (main_module_name Markdown_parser)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name markdown_parser)
+     (visibility public)
+     (kind alias)
+     (source (path Markdown_parser) (impl (path markdown_parser.ml-gen))))
+    (name Markdown_parser)
+    (modules
+     (module
+      (obj_name markdown_parser__Io)
+      (visibility public)
+      (source (path Io) (impl (path io.ml))))
+     (module
+      (obj_name markdown_parser__Parser)
+      (visibility public)
+      (source (path Parser) (impl (path parser.ml))))
+     (module
+      (obj_name markdown_parser__Styles)
+      (visibility public)
+      (source (path Styles) (impl (path styles.ml))))))
+   (wrapped true))))
